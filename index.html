@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda De Contatos!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <!--img logo e titulo-->
+        <header>
+            <img src="./img/Google_Contacts_logo.png" alt="Contao-Logo">
+            <h1>Agenda De Contatos</h1>
+        </header>
+        <form id="form-atividade"> <!--Começo do js-->
+            <!--Adicionar Contato-->
+            <input type="text" id="Nome-Contato" required placeholder="Nome da Contato">
+            <input type="number" id="Numero-Contato" required placeholder="Numero" min="0" max="70555000000">
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <!--Tabela-->
+        <table cellspacing="0"> <!--Ajuste no css, para tirar a divisoria da linha da tabela-->
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Numero</th>
+                </tr>
+            </thead>
+            
+        <!--rodapé-->
+        <tfoot>
+            <tbody>
+                <tr>
+                    <tbody id="contact-list"></tbody>
+                </tr>
+            </tbody>
+        </tfoot>
+    </div>
+
+    <!--JavaScript-->
+    <script src="script.js">
+    </script>
+</body>
+</html>
